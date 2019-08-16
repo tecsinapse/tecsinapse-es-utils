@@ -1,4 +1,4 @@
-@Library('tecsinapse/wolox-ci') _
+@Library('tec-wolox-ci') _
 
 node {
 
