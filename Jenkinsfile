@@ -1,8 +1,10 @@
 @Library('tec-wolox-ci') _
 
-node {
+(new PodTemplates())."defaultTemplate"("es-utils-deploy", 'prod') {
+  node {
 
-  checkout scm
+    checkout scm
 
-  woloxCi('.woloxci/config.yml');
+    woloxCi('.woloxci/config.yml');
+  }
 }
