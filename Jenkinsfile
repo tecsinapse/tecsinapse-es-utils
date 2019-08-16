@@ -1,7 +1,7 @@
 @Library('tec-wolox-ci') _
 
 (new PodTemplates())."defaultTemplate"("es-utils-deploy", 'prod') {
-  node {
+  node("es-utils-deploy") {
 
     checkout scm
 
