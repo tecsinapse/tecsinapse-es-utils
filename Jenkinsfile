@@ -1,3 +1,5 @@
+@Library('tecsinapse/wolox-ci') _
+
 node {
 
   checkout scm
